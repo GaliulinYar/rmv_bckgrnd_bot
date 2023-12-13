@@ -18,6 +18,7 @@ import sqlite3
 #     cur.close()
 #     conn.close()
 
+
 def rec_id_in_base(user_id_telegram, user_name):
     conn = sqlite3.connect(BASE_SQLITE)
     cur = conn.cursor()

@@ -1,8 +1,7 @@
 """Бот с использованием библиотеки pyTelegramBotAPI"""
 import shutil
 import telebot
-from config import TOKEN
-import logging
+from config import TOKEN, ID_ADMIN
 import os
 
 from rmv_bgrnd import rmv_bgrnd
@@ -28,7 +27,7 @@ def start(message):
 
 @bot.message_handler(commands=['admin_info'])
 def admin_bd_info(message):
-    if message.from_user.id == 476890564:
+    if message.from_user.id == ID_ADMIN:
         # Получаем информацию о пользователях
         users_info = get_users_info()
 
