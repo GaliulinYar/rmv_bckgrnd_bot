@@ -27,7 +27,7 @@ def start(message):
 
 @bot.message_handler(commands=['admin_info'])
 def admin_bd_info(message):
-    if message.from_user.id == ID_ADMIN:
+    if message.from_user.id == int(ID_ADMIN):
         # Получаем информацию о пользователях
         users_info = get_users_info()
 
