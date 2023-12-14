@@ -1,6 +1,6 @@
-import telebot
 from config import BASE_SQLITE
 import sqlite3
+
 
 # def start():
 #     """Создание БД sqlite"""
