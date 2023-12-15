@@ -89,7 +89,7 @@ def handle_text(message):
 @bot.message_handler(content_types=['video', 'audio', 'document', 'sticker', 'voice', 'video_note', 'location', 'contact', 'new_chat_members', 'left_chat_member', 'new_chat_title', 'new_chat_photo', 'delete_chat_photo', 'group_chat_created', 'supergroup_chat_created', 'channel_chat_created', 'migrate_to_chat_id', 'migrate_from_chat_id', 'pinned_message', 'game'])
 def handle_other_media(message):
     # Отвечаем на все другие типы медиа-сообщений
-    bot.reply_to(message, "Извините, но бот принимает только фотографии. Отправьте, пожалуйста, фотографию.")
+    bot.reply_to(message, "Извините, но бот принимает только фотографии. Отправьте, пожалуйста, фотографию. И не убирайте галочку о сжатии")
 
 
 # Запуск бота

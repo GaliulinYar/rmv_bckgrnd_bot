@@ -2,21 +2,21 @@ from config import BASE_SQLITE
 import sqlite3
 
 
-# def start():
-#     """Создание БД sqlite"""
-#     conn = sqlite3.connect('base_sqlite_id.sql')
-#     cur = conn.cursor()
-#
-#     cur.execute('''
-#            CREATE TABLE IF NOT EXISTS users (
-#                id INTEGER PRIMARY KEY AUTOINCREMENT,
-#                id_telegram INTEGER,
-#                name TEXT
-#            )
-#        ''')
-#     conn.commit()
-#     cur.close()
-#     conn.close()
+def start():
+    """Создание БД sqlite"""
+    conn = sqlite3.connect('base_sqlite_id.sql')
+    cur = conn.cursor()
+
+    cur.execute('''
+           CREATE TABLE IF NOT EXISTS users (
+               id INTEGER PRIMARY KEY AUTOINCREMENT,
+               id_telegram INTEGER,
+               name TEXT
+           )
+       ''')
+    conn.commit()
+    cur.close()
+    conn.close()
 
 
 def rec_id_in_base(user_id_telegram, user_name):
